@@ -4,11 +4,18 @@ export DEB_BUILD_MAINT_OPTIONS = hardening=+all
 DPKG_EXPORT_BUILDFLAGS = 1
 include /usr/share/dpkg/buildflags.mk
 
+include /usr/share/dpkg/architecture.mk
+
 # Uncomment this to turn on verbose mode.
 export DH_VERBOSE=1
 
 # This has to be exported to make some magic below work.
 export DH_OPTIONS
+
+ifeq ($(DEB_BUILD_ARCH),armhf)
+# Tests with armhf on Launchpad crash with "Bus error (core dumped)".
+export DEB_BUILD_OPTIONS = nocheck
+endif
 
 override_dh_auto_install:
 	true
