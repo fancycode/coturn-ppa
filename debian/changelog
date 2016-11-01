@@ -1,3 +1,9 @@
+coturn (4.5.0.3-1build1ppa2) trusty; urgency=medium
+
+  * Don't run tests on armhf.
+
+ -- Joachim Bauch <mail@joachim-bauch.de>  Tue, 01 Nov 2016 12:34:12 +0100
+
 coturn (4.5.0.3-1build1ppa1) trusty; urgency=medium
 
   * Backported to trusty.
