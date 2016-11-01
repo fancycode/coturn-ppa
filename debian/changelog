@@ -1,3 +1,9 @@
+coturn (4.5.0.3-1build1ppa1) trusty; urgency=medium
+
+  * Backported to trusty.
+
+ -- Joachim Bauch <mail@joachim-bauch.de>  Tue, 01 Nov 2016 11:41:54 +0100
+
 coturn (4.5.0.3-1build1) xenial; urgency=medium
 
   * Rebuild against libmysqlclient20.
